@@ -178,6 +178,15 @@
     box-shadow: var(--shadow-card);
   }
 
+  /* Nạp font Material Symbols Outlined cục bộ để tải tức thì, không bị trễ mạng */
+  @font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: block;
+    src: url('/fonts/material-symbols-outlined.woff2') format('woff2');
+  }
+
   /* Material Symbols (icon font) */
   .material-symbols-outlined {
     font-family: 'Material Symbols Outlined' !important;
@@ -188,7 +197,9 @@
       'wght' 400,
       'GRAD' 0,
       'opsz' 24;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     vertical-align: middle;
     line-height: 1;
     letter-spacing: normal;
@@ -198,6 +209,13 @@
     direction: ltr;
     font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
+    /* Khóa kích thước 1em x 1em và ẩn chữ thừa để không bao giờ vỡ layout khi font đang nạp */
+    width: 1em;
+    height: 1em;
+    max-width: 1em;
+    max-height: 1em;
+    overflow: hidden;
+    flex-shrink: 0;
   }
   .material-symbols-outlined.fill,
   .material-symbols-outlined.fill-icon {
