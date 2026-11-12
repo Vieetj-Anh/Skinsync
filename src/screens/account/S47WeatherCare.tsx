@@ -8,29 +8,29 @@ export default function S47WeatherCare() {
     <Screen tab={0}>
       <div className="relative flex h-[844px] w-[390px] select-none flex-col justify-between overflow-hidden bg-[#F7F8F2] font-sans antialiased">
         <SafeAreaTop />
-        <main className="flex flex-1 flex-col justify-between overflow-hidden px-4 pb-2 pt-1" style={{ paddingBottom: '74px' }}>
-          <header className="relative flex h-[36px] items-center justify-between px-1">
-            <button
-              aria-label="Quay lại"
-              data-back="s10"
-              className="flex h-8 w-8 items-center justify-center rounded-full border border-[#E3E6D3] bg-white/70 text-[#357D64] transition-transform active:scale-95"
-              type="button"
-            >
-              <span className="material-symbols-outlined text-[20px]">chevron_left</span>
-            </button>
-            <div className="flex items-center gap-1.5">
-              <BrandLogo />
+        <main className="no-scrollbar flex flex-1 flex-col justify-between overflow-y-auto px-4 pb-2 pt-1" style={{ paddingBottom: '86px' }}>
+          <header className="relative shrink-0 px-1 pt-0.5">
+            <div className="relative mb-1 flex h-[36px] items-center justify-between">
+              <button
+                aria-label="Quay lại"
+                data-back="s10"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-[#E3E6D3] bg-white/70 text-[#357D64] transition-transform active:scale-95"
+                type="button"
+              >
+                <span className="material-symbols-outlined text-[20px]">chevron_left</span>
+              </button>
+              <div className="flex items-center gap-1.5">
+                <BrandLogo />
+              </div>
+              <div className="h-8 w-8" />
             </div>
-            <div className="h-8 w-8" />
-          </header>
-          <section className="mt-1">
-            <h1 className="font-serif text-[19px] font-bold leading-tight tracking-tight text-[#173B32]" style={{ color: 'rgb(23,59,50)' }}>
-              Thời tiết và chăm sóc da hôm nay
+            <h1 className="font-serif text-[19px] font-bold leading-tight tracking-tight text-[#173B32]">
+              Thời tiết & chăm sóc da hôm nay
             </h1>
             <p className="mt-0.5 text-[10.5px] font-medium leading-snug text-[#697268]">
               Cập nhật điều kiện thời tiết và môi trường để giúp bạn chăm sóc da phù hợp hơn mỗi ngày.
             </p>
-          </section>
+          </header>
           <section className="mt-2 flex items-center justify-between gap-2">
             <div
               data-toast="Chọn khu vực: Đà Nẵng, Hà Nội, TP. Hồ Chí Minh…"
@@ -95,7 +95,7 @@ export default function S47WeatherCare() {
                   </div>
                 </div>
                 <p className="mt-0.5 border-t border-[#EDEFE2] pt-1 text-[8px] font-medium leading-tight text-[#5B746B]">
-                  <strong className="font-semibold text-[#D04436]">Cần bảo vệ da kỹ.</strong> Hạn chế ra nắng 10:00 - 15:00.
+                  <strong className="font-semibold text-[#D04436]">Cần bảo vệ da kỹ.</strong> Hạn chế ra nắng 10:00 – 15:00.
                 </p>
               </div>
             </div>
@@ -122,7 +122,7 @@ export default function S47WeatherCare() {
                 <span className="material-symbols-outlined text-[18px] font-medium text-[#43B28B]">air</span>
               </div>
               <div className="min-w-0">
-                <span className="block truncate text-[8.5px] font-medium leading-none text-[#6E7B70]">CL không khí</span>
+                <span className="block truncate text-[8.5px] font-medium leading-none text-[#6E7B70]">Không khí</span>
                 <span className="block text-[13px] font-bold leading-tight text-[#173B32]">Tốt</span>
                 <span className="block text-[8.5px] font-medium leading-none text-[#43B28B]">AQI 42</span>
               </div>
@@ -144,7 +144,7 @@ export default function S47WeatherCare() {
           <section className="mt-1 flex items-center justify-between px-1 text-[9.5px] font-medium text-[#717F72]">
             <div className="flex items-center gap-1">
               <span className="material-symbols-outlined text-[13px]">schedule</span>
-              <span>Cập nhật lúc: 10:30, 22/10/2024</span>
+              <span>Cập nhật lúc: 10:30, 22/10/2026</span>
             </div>
             <div className="flex items-center gap-1">
               <span className="material-symbols-outlined text-[13px]">sync</span>

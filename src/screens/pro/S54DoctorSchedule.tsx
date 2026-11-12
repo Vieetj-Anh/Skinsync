@@ -11,36 +11,35 @@ export default function S54DoctorSchedule() {
         style={{ width: '390px', height: '844px', backgroundColor: '#F7F8F2' }}
       >
         <SafeAreaTop />
-        <section className="relative mt-1 flex select-none items-center justify-between px-4 pb-1 pt-3">
-          <button
-            aria-label="Menu"
-            data-toast="Menu bác sĩ (minh họa)"
-            className="relative z-10 flex h-8 w-8 items-center justify-center rounded-full text-[#173B32] transition-colors hover:bg-[#E6E9D7]"
-            type="button"
-          >
-            <span className="material-symbols-outlined text-[24px]">menu</span>
-          </button>
-          <div className="relative z-10 flex flex-1 items-center justify-center">
-            <BrandLogo />
-          </div>
-          <div data-go="s58" className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center">
-            <div className="shadow-2xs relative h-9 w-9 overflow-hidden rounded-full border-2 border-[#D1DFD9]">
-              <img alt="Bác sĩ" className="h-full w-full object-cover" src="/img/people/doctor-lan.jpg" />
+        <header className="relative z-20 shrink-0 px-4 pb-1 pt-2">
+          <div className="relative mb-1 flex select-none items-center justify-between">
+            <button
+              aria-label="Menu"
+              data-toast="Menu bác sĩ (minh họa)"
+              className="relative z-10 flex h-8 w-8 items-center justify-center rounded-full text-[#173B32] transition-colors hover:bg-[#E6E9D7]"
+              type="button"
+            >
+              <span className="material-symbols-outlined text-[24px]">menu</span>
+            </button>
+            <div className="relative z-10 flex flex-1 items-center justify-center">
+              <BrandLogo />
+            </div>
+            <div data-go="s58" className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center">
+              <div className="shadow-2xs relative h-9 w-9 overflow-hidden rounded-full border-2 border-[#D1DFD9]">
+                <img alt="Bác sĩ" className="h-full w-full object-cover" src="/img/people/doctor-lan.jpg" />
+              </div>
             </div>
           </div>
-        </section>
-        <main className="flex flex-1 flex-col justify-between overflow-hidden px-3.5 pb-1" style={{ paddingBottom: '90px' }}>
+          <div className="mt-1">
+            <h1 className="font-serif text-[22px] font-bold leading-tight tracking-tight text-[#173B32]">
+              Lịch khám của tôi
+            </h1>
+            <p className="mt-0.5 text-[11.5px] leading-tight text-[#357D64]">Quản lý lịch hẹn, sắp xếp thời gian và theo dõi bệnh nhân.</p>
+          </div>
+        </header>
+        <main className="no-scrollbar flex flex-1 flex-col overflow-y-auto px-3.5 pb-1" style={{ paddingBottom: '96px' }}>
           <section>
-            <div className="mt-0.5">
-              <h1
-                className="text-[24px] font-bold leading-tight tracking-tight text-[#173B32]"
-                style={{ fontFamily: 'var(--font-heading)' }}
-              >
-                Lịch khám của tôi
-              </h1>
-              <p className="mt-1 text-[12.5px] leading-tight text-[#357D64]">Quản lý lịch hẹn, sắp xếp thời gian và theo dõi bệnh nhân.</p>
-            </div>
-            <div data-pills="" className="mt-2 flex rounded-full bg-[#EBF0EE] p-1 text-xs">
+            <div data-pills="" className="mt-1 flex rounded-full bg-[#EBF0EE] p-1 text-xs">
               <button
                 data-on=""
                 className="shadow-xs flex-1 rounded-full bg-[#173B32] py-1.5 text-center font-bold text-white"
@@ -116,7 +115,7 @@ export default function S54DoctorSchedule() {
               </div>
             </div>
           </section>
-          <section className="relative my-2 flex flex-1 flex-col justify-between gap-2">
+          <section className="relative my-2 flex flex-col gap-2">
             <div style={{ position: 'absolute', left: '45px', top: '14px', bottom: '14px', width: '1.5px', backgroundColor: '#DFE2CE' }} />
             <article className="relative z-10 flex items-center gap-2">
               <div className="w-10 shrink-0 text-right">

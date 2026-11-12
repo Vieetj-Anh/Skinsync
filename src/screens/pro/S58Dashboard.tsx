@@ -11,43 +11,45 @@ export default function S58Dashboard() {
         style={{ width: '390px', height: '844px', backgroundColor: '#F7F8F2' }}
       >
         <SafeAreaTop />
-        <div className="flex flex-1 flex-col justify-between px-3.5 pt-0.5" style={{ paddingBottom: '100px' }}>
-          <section className="flex items-center justify-between py-1">
-            <button
-              aria-label="Menu"
-              data-toast="Menu bác sĩ (minh họa)"
-              className="flex h-8 w-8 items-center justify-center rounded-full text-neutral-700 active:bg-[#EAECDE]"
-            >
-              <span className="material-symbols-outlined text-[20px]">menu</span>
-            </button>
-            <div className="flex items-center gap-1.5">
-              <BrandLogo />
+        <div className="no-scrollbar flex flex-1 flex-col space-y-2 overflow-y-auto px-3.5 pt-0.5" style={{ paddingBottom: '100px' }}>
+          <header className="relative z-20 shrink-0 pb-1">
+            <div className="flex items-center justify-between py-1">
+              <button
+                aria-label="Menu"
+                data-toast="Menu bác sĩ (minh họa)"
+                className="flex h-8 w-8 items-center justify-center rounded-full text-neutral-700 active:bg-[#EAECDE]"
+              >
+                <span className="material-symbols-outlined text-[20px]">menu</span>
+              </button>
+              <div className="flex items-center gap-1.5">
+                <BrandLogo />
+              </div>
+              <div
+                data-go="s53"
+                className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full border border-[#357D64]/50 bg-[#DCE7E2]"
+              >
+                <img src="/img/people/doctor-lan.jpg" alt="Doctor avatar" className="h-full w-full object-cover" />
+              </div>
             </div>
-            <div
-              data-go="s53"
-              className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full border border-[#357D64]/50 bg-[#DCE7E2]"
-            >
-              <img src="/img/people/doctor-lan.jpg" alt="Doctor avatar" className="h-full w-full object-cover" />
+            <div className="mb-1 mt-0.5 flex items-start justify-between">
+              <div className="max-w-[210px]">
+                <h1 className="font-serif text-[18px] font-bold leading-tight tracking-tight text-[#173B32]">
+                  Bảng thống kê
+                </h1>
+                <p className="mt-0.5 text-[9px] font-normal leading-tight text-neutral-500">
+                  Tổng quan hoạt động hệ thống, người dùng, lịch khám và nội dung trên SKINSYNC.
+                </p>
+              </div>
+              <div
+                data-toast="Chọn tháng báo cáo (minh họa)"
+                className="shadow-2xs flex items-center gap-1 rounded-full border border-[#E3E6D3] bg-white px-2.5 py-1 text-[10.5px] font-medium text-[#357D64]"
+              >
+                <span className="material-symbols-outlined text-[12px] text-[#357D64]">calendar_today</span>
+                <span className="text-[10px] font-semibold">Tháng 10/2026</span>
+                <span className="material-symbols-outlined text-[13px] text-neutral-400">expand_more</span>
+              </div>
             </div>
-          </section>
-          <section className="mb-1.5 mt-0.5 flex items-start justify-between">
-            <div className="max-w-[210px]">
-              <h1 className="font-serif-brand text-[16px] font-bold leading-tight tracking-tight text-[#357D64]">
-                Bảng điều khiển quản trị
-              </h1>
-              <p className="mt-0.5 text-[9px] font-normal leading-tight text-neutral-500">
-                Tổng quan hoạt động hệ thống, người dùng, lịch khám và nội dung trên SKINSYNC.
-              </p>
-            </div>
-            <div
-              data-toast="Chọn tháng báo cáo (minh họa)"
-              className="shadow-2xs flex items-center gap-1 rounded-full border border-[#E3E6D3] bg-white px-2.5 py-1 text-[10.5px] font-medium text-[#357D64]"
-            >
-              <span className="material-symbols-outlined text-[12px] text-[#357D64]">calendar_today</span>
-              <span className="text-[10px] font-semibold">Tháng 10/2026</span>
-              <span className="material-symbols-outlined text-[13px] text-neutral-400">expand_more</span>
-            </div>
-          </section>
+          </header>
           <section className="mb-1.5 grid grid-cols-2 gap-1.5">
             <div className="shadow-2xs flex items-center gap-2 rounded-[10px] border border-[#E8EEEB] bg-white p-2">
               <div
@@ -194,7 +196,7 @@ export default function S58Dashboard() {
               <div className="mb-1 flex items-center justify-between border-b border-neutral-100 pb-1">
                 <span className="text-[10px] font-bold text-[#357D64]">Nội dung chờ duyệt</span>
                 <a data-go="s59" className="flex items-center text-[8.5px] font-semibold text-[#1B8354] hover:underline" href="#">
-                  Xem tất cả &gt;
+                  Xem tất cả <span className="material-symbols-outlined ml-0.5 text-[11px]">chevron_right</span>
                 </a>
               </div>
               <div className="space-y-1.5 py-0.5">
@@ -247,7 +249,7 @@ export default function S58Dashboard() {
                   className="flex items-center justify-between py-0.5 text-[9px] text-neutral-700 hover:text-[#357D64]"
                 >
                   <span className="truncate">Báo cáo người dùng</span>
-                  <span className="text-[10px] text-neutral-400">&gt;</span>
+                  <span className="material-symbols-outlined text-[13px] text-neutral-400">chevron_right</span>
                 </a>
                 <a
                   data-toast="Báo cáo doanh thu (minh họa)"
@@ -255,7 +257,7 @@ export default function S58Dashboard() {
                   className="flex items-center justify-between py-0.5 text-[9px] text-neutral-700 hover:text-[#357D64]"
                 >
                   <span className="truncate">Báo cáo doanh thu</span>
-                  <span className="text-[10px] text-neutral-400">&gt;</span>
+                  <span className="material-symbols-outlined text-[13px] text-neutral-400">chevron_right</span>
                 </a>
                 <a
                   data-toast="Báo cáo lịch khám (minh họa)"
@@ -263,7 +265,7 @@ export default function S58Dashboard() {
                   className="flex items-center justify-between py-0.5 text-[9px] text-neutral-700 hover:text-[#357D64]"
                 >
                   <span className="truncate">Báo cáo lịch khám</span>
-                  <span className="text-[10px] text-neutral-400">&gt;</span>
+                  <span className="material-symbols-outlined text-[13px] text-neutral-400">chevron_right</span>
                 </a>
                 <a
                   data-toast="Báo cáo hoạt động (minh họa)"
@@ -271,7 +273,7 @@ export default function S58Dashboard() {
                   className="flex items-center justify-between py-0.5 text-[9px] text-neutral-700 hover:text-[#357D64]"
                 >
                   <span className="truncate">Báo cáo hoạt động</span>
-                  <span className="text-[10px] text-neutral-400">&gt;</span>
+                  <span className="material-symbols-outlined text-[13px] text-neutral-400">chevron_right</span>
                 </a>
               </div>
             </div>

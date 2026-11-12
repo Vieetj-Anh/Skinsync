@@ -261,13 +261,16 @@
   min-height: 65px;
 }
 .campaign {
-  height: 145px;
+  min-height: 145px;
+  height: auto;
   border-radius: 14px;
   background: linear-gradient(110deg, #eef0e3, #d8eae3);
-  padding: 15px;
+  padding: 14px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
+  margin: 12px 0;
 }
 .listrow {
   display: flex;

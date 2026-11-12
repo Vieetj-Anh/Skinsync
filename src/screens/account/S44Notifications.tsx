@@ -9,7 +9,7 @@ export default function S44Notifications() {
         className="relative flex select-none flex-col overflow-hidden font-sans text-stone-800"
         style={{ width: '390px', height: '844px', position: 'relative', overflow: 'hidden', background: 'rgb(247,248,242)' }}
       >
-        <div className="z-20 shrink-0 px-5 pt-3" style={{ paddingTop: '50px' }}>
+        <header className="z-20 shrink-0 px-5 pt-3" style={{ paddingTop: '50px' }}>
           <div className="relative flex h-8 w-full items-center justify-center">
             <button
               aria-label="Quay lại"
@@ -26,9 +26,9 @@ export default function S44Notifications() {
             </div>
           </div>
           <div className="mt-3 pr-8">
-            <h2 className="font-serif text-[22px] font-bold leading-tight tracking-tight text-moss-dark" style={{ color: 'rgb(23,59,50)' }}>
+            <h1 className="font-serif text-[22px] font-bold leading-tight tracking-tight" style={{ color: 'rgb(23,59,50)' }}>
               Thông báo của bạn
-            </h2>
+            </h1>
             <p className="mt-1 pr-4 text-[11.5px] font-medium leading-4 text-stone-500">
               Cập nhật những thông tin quan trọng và nhắc nhở để đồng hành cùng làn da của bạn.
             </p>
@@ -67,8 +67,8 @@ export default function S44Notifications() {
               Cộng đồng
             </button>
           </div>
-        </div>
-        <div className="no-scrollbar flex-1 space-y-2.5 overflow-y-auto px-4 py-2" style={{ paddingBottom: '6px', paddingTop: '4px' }}>
+        </header>
+        <div className="no-scrollbar flex-1 space-y-2.5 overflow-y-auto px-4 py-2" style={{ paddingBottom: '96px', paddingTop: '4px' }}>
           <article
             data-go="s17"
             className="flex cursor-pointer items-start space-x-3 rounded-2xl border border-stone-200/60 bg-white/85 p-3 shadow-[0_1px_4px_rgba(0,0,0,0.02)] transition-transform active:scale-[0.99]"

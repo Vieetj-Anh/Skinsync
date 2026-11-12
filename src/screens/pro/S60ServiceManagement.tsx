@@ -8,7 +8,7 @@ export default function S60ServiceManagement() {
   return (
     <Screen tab={3} role="doctor" iconSize="sm">
       <div className="relative flex h-[844px] w-[390px] select-none flex-col justify-between overflow-hidden bg-[#F7F8F2]">
-        <header className="relative isolate z-20 w-full flex-shrink-0 overflow-hidden px-6">
+        <header className="relative isolate z-20 w-full shrink-0 overflow-hidden px-5 pb-1 pt-0.5">
           <SafeAreaTop />
           <div className="relative z-20 mb-1 mt-1 flex items-center justify-between">
             <button
@@ -28,17 +28,17 @@ export default function S60ServiceManagement() {
               <img src="/img/people/doctor-lan.jpg" alt="Doctor Avatar" className="h-full w-full rounded-full object-cover" />
             </div>
           </div>
-        </header>
-        <main className="z-10 flex flex-1 flex-col justify-start overflow-hidden px-4 pb-1 pt-0.5" style={{ paddingBottom: '86px' }}>
-          <div className="relative z-20 mb-1.5 px-1">
-            <h1 className="text-[17px] font-bold leading-tight tracking-tight text-[#173B32]" style={{ fontFamily: 'var(--font-heading)' }}>
-              Quản lý dịch vụ SKINSYNC
+          <div className="relative z-20 mt-1 px-1">
+            <h1 className="font-serif text-[18px] font-bold leading-tight tracking-tight text-[#173B32]">
+              Quản lý dịch vụ
             </h1>
             <p className="mt-0.5 text-[10.5px] font-medium leading-tight text-[#606860]">
               Quản lý sản phẩm, dịch vụ, gói thành viên và các hoạt động vận hành của hệ thống.
             </p>
           </div>
-          <div className="flex flex-1 flex-col justify-between space-y-1">
+        </header>
+        <main className="no-scrollbar z-10 flex flex-1 flex-col space-y-2 overflow-y-auto px-4 pb-1 pt-0.5" style={{ paddingBottom: '96px' }}>
+          <div className="flex flex-col space-y-1.5">
             <div
               data-go="s19"
               className="shadow-xs flex items-center justify-between rounded-xl border border-[#E2E9E6] bg-white px-3 py-2 transition hover:bg-[#F7F8F2]"
@@ -52,7 +52,7 @@ export default function S60ServiceManagement() {
                 </div>
                 <div>
                   <h2 className="text-[13px] font-semibold leading-tight text-[#173B32]">Danh mục sản phẩm</h2>
-                  <p className="mt-0.5 text-[11px] leading-tight text-[#7A827A]">Quản lý sản phẩm skincare &amp; y khoa</p>
+                  <p className="mt-0.5 text-[11px] leading-tight text-[#7A827A]">Quản lý sản phẩm skincare & y khoa</p>
                 </div>
               </div>
               <div className="flex flex-shrink-0 items-center space-x-1.5">
@@ -68,7 +68,7 @@ export default function S60ServiceManagement() {
               </div>
             </div>
             <div
-              data-toast="Giá bán &amp; tồn kho (minh họa)"
+              data-toast="Giá bán & tồn kho (minh họa)"
               className="shadow-xs flex items-center justify-between rounded-xl border border-[#E2E9E6] bg-white px-3 py-2 transition hover:bg-[#F7F8F2]"
             >
               <div className="flex items-center space-x-3">
@@ -247,8 +247,8 @@ export default function S60ServiceManagement() {
                   <span className="material-symbols-outlined !text-[20px]">bar_chart</span>
                 </div>
                 <div>
-                  <h2 className="line-clamp-1 text-[13px] font-semibold leading-tight text-[#173B32]">Báo cáo giao dịch &amp; hỗ trợ KH</h2>
-                  <p className="mt-0.5 line-clamp-1 text-[11px] leading-tight text-[#7A827A]">Theo dõi doanh thu, đơn hàng &amp; hỗ trợ</p>
+                  <h2 className="line-clamp-1 text-[13px] font-semibold leading-tight text-[#173B32]">Báo cáo giao dịch & hỗ trợ khách hàng</h2>
+                  <p className="mt-0.5 line-clamp-1 text-[11px] leading-tight text-[#7A827A]">Theo dõi doanh thu, đơn hàng & hỗ trợ</p>
                 </div>
               </div>
               <div className="flex flex-shrink-0 items-center space-x-1.5">

@@ -25,14 +25,14 @@ export default function S45ReminderSettings() {
             <div className="w-7" />
           </div>
           <h1 className="relative z-10 font-serif text-[19px] font-bold leading-tight tracking-tight text-[#173B32]">Tùy chỉnh nhắc nhở</h1>
-          <p className="relative z-10 mt-0.5 max-w-[255px] text-[11px] font-medium leading-snug text-[#687F77]">
+          <p className="relative z-10 mt-0.5 text-[11px] font-medium leading-snug text-[#687F77]">
             Thiết lập lịch nhắc phù hợp để duy trì thói quen chăm sóc da và sinh hoạt lành mạnh.
           </p>
         </header>
-        <main className="flex w-full flex-1 flex-col justify-between overflow-hidden px-3.5 pb-[76px] pt-1">
-          <section className="flex flex-1 flex-col gap-0.5">
+        <main className="no-scrollbar flex w-full flex-1 flex-col space-y-2 overflow-y-auto px-3.5 pb-[96px] pt-1">
+          <section className="flex flex-col gap-0.5">
             <h2 className="mb-0.5 flex items-center gap-1 text-[12px] font-bold tracking-wide text-[#173B32]">Lịch nhắc của tôi</h2>
-            <div className="flex flex-1 flex-col justify-between divide-y divide-[#EEF0E3] rounded-xl border border-[#E6E9D7] bg-white/80 px-2.5 py-1 shadow-sm backdrop-blur-sm">
+            <div className="divide-y divide-[#EEF0E3] rounded-xl border border-[#E6E9D7] bg-white/80 px-2.5 py-1 shadow-sm backdrop-blur-sm">
               <div className="flex flex-1 items-center justify-between gap-1 py-1">
                 <div className="flex min-w-0 flex-1 items-center gap-2 pr-1">
                   <div

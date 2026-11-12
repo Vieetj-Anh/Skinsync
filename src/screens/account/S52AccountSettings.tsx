@@ -8,7 +8,7 @@ export default function S52AccountSettings() {
     <Screen tab={4}>
       <div className="relative flex h-[844px] w-[390px] select-none flex-col justify-between overflow-hidden bg-[#F7F8F2] font-sans">
         <SafeAreaTop />
-        <header className="relative z-20 flex-shrink-0 px-4 pb-1 pt-1" style={{ paddingTop: '14px', paddingBottom: '2px' }}>
+        <header className="relative z-20 shrink-0 px-4 pb-1 pt-0.5">
           <div className="relative mb-0.5 flex items-center justify-between">
             <button
               aria-label="Quay lại"
@@ -21,18 +21,15 @@ export default function S52AccountSettings() {
             <div className="w-7" />
           </div>
           <div className="mt-1">
-            <h1 className="text-[20px] font-bold leading-tight tracking-tight text-[#173B32]" style={{ fontFamily: 'var(--font-heading)' }}>
+            <h1 className="font-serif text-[20px] font-bold leading-tight tracking-tight text-[#173B32]">
               Cài đặt tài khoản
             </h1>
-            <p className="mt-0.5 font-sans text-[11px] font-normal leading-snug text-[#5A7184]">
+            <p className="mt-0.5 text-[11px] font-normal leading-snug text-[#5A7184]">
               Quản lý bảo mật, quyền riêng tư và các tùy chọn tài khoản của bạn.
             </p>
           </div>
         </header>
-        <main
-          className="relative z-20 flex flex-1 flex-col justify-between overflow-hidden px-4 pb-1 pt-1"
-          style={{ marginBottom: '88px', paddingTop: '2px', paddingBottom: '2px' }}
-        >
+        <main className="no-scrollbar relative z-20 flex flex-1 flex-col space-y-2.5 overflow-y-auto px-4 pb-[96px] pt-1">
           <section className="rounded-xl border border-[#E4ECE9] bg-[#F7F8F2]/90 p-2 shadow-sm">
             <div className="flex items-center gap-1.5 px-1 pb-1 text-[#173B32]">
               <div className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md" style={{ backgroundColor: '#D3E6DE' }}>

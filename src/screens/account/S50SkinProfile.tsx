@@ -8,36 +8,38 @@ export default function S50SkinProfile() {
     <Screen tab={4}>
       <div className="relative flex h-[844px] w-[390px] select-none flex-col justify-between overflow-hidden bg-[#F7F8F2] font-sans antialiased">
         <SafeAreaTop />
-        <main className="flex flex-1 flex-col justify-between overflow-hidden px-3.5 pb-[88px] pt-0">
-          <header className="relative flex items-center justify-between py-1">
-            <button
-              aria-label="Quay lại"
-              data-back="s48"
-              className="flex h-7 w-7 items-center justify-center rounded-full border border-[#E3E6D3] bg-white/80 text-[#357D64] transition-transform active:scale-95"
-              type="button"
-            >
-              <span className="material-symbols-outlined text-[17px]">arrow_back_ios_new</span>
-            </button>
-            <div className="flex items-center justify-center">
-              <BrandLogo />
+        <main className="no-scrollbar flex flex-1 flex-col space-y-2 overflow-y-auto px-3.5 pb-[96px] pt-0">
+          <header className="relative shrink-0 pb-1 pt-0.5">
+            <div className="relative mb-1 flex items-center justify-between">
+              <button
+                aria-label="Quay lại"
+                data-back="s48"
+                className="flex h-7 w-7 items-center justify-center rounded-full border border-[#E3E6D3] bg-white/80 text-[#357D64] transition-transform active:scale-95"
+                type="button"
+              >
+                <span className="material-symbols-outlined text-[20px]">chevron_left</span>
+              </button>
+              <div className="flex items-center justify-center">
+                <BrandLogo />
+              </div>
+              <div className="flex h-7 w-7 items-center justify-center" />
             </div>
-            <div className="flex h-7 w-7 items-center justify-center" />
+            <div className="pt-0.5">
+              <h1 className="font-serif text-[18px] font-bold leading-tight tracking-tight text-[#173B32]">Hồ sơ làn da</h1>
+              <p className="mt-0.5 text-[11px] leading-tight text-[#697268]">Theo dõi tình trạng da, lịch sử chăm sóc và tiến trình.</p>
+            </div>
           </header>
-          <div className="pt-0.5">
-            <h1 className="font-serif text-[18px] font-bold leading-tight tracking-tight text-[#173B32]">Hồ sơ làn da</h1>
-            <p className="mt-0.5 text-[11px] leading-tight text-[#697268]">Theo dõi tình trạng da, lịch sử chăm sóc và tiến trình.</p>
-          </div>
           <div data-go="s13" className="flex items-center space-x-3 rounded-xl border border-[#E3E6D3] bg-white p-2.5 shadow-sm">
             <div className="relative h-[76px] w-[76px] shrink-0 overflow-hidden rounded-lg border border-[#E8EBDA] bg-[#F4F6ED]">
               <img src="/img/skin/acne-cheek-1.jpg" alt="Ảnh soi da" className="h-full w-full object-cover" />
               <div className="absolute inset-x-0 bottom-0 bg-black/60 py-0.5 text-center backdrop-blur-[2px]">
-                <span className="block text-[8px] font-medium tracking-tight text-white">14/10/2024</span>
+                <span className="block text-[8px] font-medium tracking-tight text-white">14/10/2026</span>
               </div>
             </div>
             <div className="min-w-0 flex-1">
               <div className="flex items-center justify-between">
                 <span className="text-[9px] font-bold uppercase tracking-wider text-[#6D776B]">Tình trạng hiện tại</span>
-                <span className="rounded bg-[#E5EFEB] px-1.5 py-0.5 text-[10px] font-semibold text-[#357D64]">78/100 Điểm</span>
+                <span className="rounded bg-[#E5EFEB] px-1.5 py-0.5 text-[10px] font-semibold text-[#357D64]">78/100 điểm</span>
               </div>
               <div className="mt-1 flex items-center justify-between">
                 <span className="text-[13px] font-bold text-[#173B32]">Mụn nhẹ</span>
@@ -106,14 +108,14 @@ export default function S50SkinProfile() {
           </div>
           <div className="rounded-xl border border-[#E3E6D3] bg-white p-2.5">
             <div className="mb-2 flex items-center justify-between">
-              <span className="text-[11px] font-bold text-[#173B32]">Lịch sử chăm sóc &amp; điều trị</span>
+              <span className="text-[11px] font-bold text-[#173B32]">Lịch sử chăm sóc & điều trị</span>
               <button data-go="s33" className="text-[10px] font-semibold text-[#357D64] underline underline-offset-2" type="button">
                 Xem tất cả
               </button>
             </div>
             <div className="relative space-y-2.5">
               <div className="relative flex items-start text-[10px]">
-                <span className="w-[32px] shrink-0 pt-0.5 font-mono text-[10px] font-semibold text-[#6D776B]">2024</span>
+                <span className="w-[32px] shrink-0 pt-0.5 font-mono text-[10px] font-semibold text-[#6D776B]">2026</span>
                 <div className="relative mr-2 flex flex-col items-center pt-1">
                   <span className="z-10 h-2 w-2 rounded-full bg-[#357D64] ring-2 ring-white" />
                   <span className="absolute top-2 h-[calc(100%+14px)] w-[1.5px] bg-[#D6E3DE]" />
@@ -122,11 +124,11 @@ export default function S50SkinProfile() {
                   <span className="block truncate text-[10px] font-semibold leading-tight text-[#357D64]">
                     Điều trị mụn tại phòng khám da liễu
                   </span>
-                  <span className="mt-0.5 block text-[9px] leading-tight text-[#7F867C]">(T3 – T6/2024)</span>
+                  <span className="mt-0.5 block text-[9px] leading-tight text-[#7F867C]">(T3 – T6/2026)</span>
                 </div>
               </div>
               <div className="relative flex items-start text-[10px]">
-                <span className="w-[32px] shrink-0 pt-0.5 font-mono text-[10px] font-semibold text-[#6D776B]">2023</span>
+                <span className="w-[32px] shrink-0 pt-0.5 font-mono text-[10px] font-semibold text-[#6D776B]">2025</span>
                 <div className="relative mr-2 flex flex-col items-center pt-1">
                   <span className="z-10 h-2 w-2 rounded-full bg-[#769E90] ring-2 ring-white" />
                 </div>
@@ -134,7 +136,7 @@ export default function S50SkinProfile() {
                   <span className="block truncate text-[10px] font-medium leading-tight text-[#4C625A]">
                     Sử dụng treatment (BHA, Retinol)
                   </span>
-                  <span className="mt-0.5 block text-[9px] leading-tight text-[#7F867C]">(8/2023 – 12/2023)</span>
+                  <span className="mt-0.5 block text-[9px] leading-tight text-[#7F867C]">(8/2025 – 12/2025)</span>
                 </div>
               </div>
             </div>

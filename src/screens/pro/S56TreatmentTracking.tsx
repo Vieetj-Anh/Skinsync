@@ -8,7 +8,7 @@ export default function S56TreatmentTracking() {
     <Screen tab={2} role="doctor">
       <div className="relative flex h-[844px] w-[390px] select-none flex-col overflow-hidden bg-[#F7F8F2] font-sans antialiased">
         <SafeAreaTop />
-        <main className="flex flex-1 flex-col overflow-hidden px-4 pb-1 pt-1" style={{ paddingBottom: '86px' }}>
+        <main className="no-scrollbar flex flex-1 flex-col overflow-y-auto px-4 pb-1 pt-1" style={{ paddingBottom: '96px' }}>
           <nav className="relative flex items-center justify-between border-b border-brand-border/40 pb-1.5 pt-0.5">
             <button
               aria-label="Menu"
@@ -64,7 +64,7 @@ export default function S56TreatmentTracking() {
               Đã hoàn thành
             </button>
           </section>
-          <div className="flex flex-1 flex-col justify-start gap-2 overflow-hidden">
+          <div className="flex flex-col justify-start gap-2">
             <article className="shadow-xs flex flex-col gap-1.5 rounded-xl border border-brand-border/70 bg-white p-2.5">
               <div data-go="s55" className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">

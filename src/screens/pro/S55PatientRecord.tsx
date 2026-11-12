@@ -11,28 +11,30 @@ export default function S55PatientRecord() {
         style={{ width: '390px', height: '844px', backgroundColor: '#F7F8F2', color: '#173B32' }}
       >
         <SafeAreaTop />
-        <main className="flex flex-1 flex-col overflow-hidden px-4 pb-1 pt-1" style={{ paddingBottom: '86px' }}>
-          <header className="relative z-20 mb-1.5 flex h-9 items-center justify-between">
-            <button
-              data-back="s54"
-              className="shadow-xs flex h-7 w-7 items-center justify-center rounded-full border border-[#E3E6D2] bg-white/70 text-[#357D64] transition active:bg-neutral-200/50"
-            >
-              <span className="material-symbols-outlined text-[17px]">arrow_back_ios_new</span>
-            </button>
-            <BrandLogo />
-            <button
-              data-toast="Thêm tùy chọn hồ sơ (minh họa)"
-              className="shadow-xs flex h-7 w-7 items-center justify-center rounded-full border border-[#E3E6D2] bg-white/70 text-[#357D64] active:bg-neutral-200/50"
-            >
-              <span className="material-symbols-outlined text-[18px]">more_horiz</span>
-            </button>
+        <main className="no-scrollbar flex flex-1 flex-col overflow-y-auto px-4 pb-1 pt-1" style={{ paddingBottom: '96px' }}>
+          <header className="relative z-20 shrink-0 pb-1 pt-0.5">
+            <div className="mb-1 flex h-8 items-center justify-between">
+              <button
+                data-back="s54"
+                className="shadow-xs flex h-7 w-7 items-center justify-center rounded-full border border-[#E3E6D2] bg-white/70 text-[#357D64] transition active:bg-neutral-200/50"
+              >
+                <span className="material-symbols-outlined text-[20px]">chevron_left</span>
+              </button>
+              <BrandLogo />
+              <button
+                data-toast="Thêm tùy chọn hồ sơ (minh họa)"
+                className="shadow-xs flex h-7 w-7 items-center justify-center rounded-full border border-[#E3E6D2] bg-white/70 text-[#357D64] active:bg-neutral-200/50"
+              >
+                <span className="material-symbols-outlined text-[18px]">more_horiz</span>
+              </button>
+            </div>
+            <div className="mt-1">
+              <h1 className="font-serif text-[18px] font-bold leading-tight text-[#173B32]">
+                Hồ sơ bệnh nhân
+              </h1>
+              <p className="mt-0.5 text-[10.5px] leading-tight text-[#357D64]">Xem và cập nhật thông tin, lịch sử điều trị của bệnh nhân.</p>
+            </div>
           </header>
-          <div className="z-20 mb-2.5">
-            <h1 className="text-[18px] font-bold leading-tight text-[#173B32]" style={{ fontFamily: 'var(--font-heading)' }}>
-              Hồ sơ bệnh nhân
-            </h1>
-            <p className="mt-0.5 text-[10.5px] leading-tight text-[#357D64]">Xem và cập nhật thông tin, lịch sử điều trị của bệnh nhân.</p>
-          </div>
           <section
             data-go="s56"
             className="shadow-xs z-20 mb-2 flex items-center justify-between rounded-2xl border border-[#E9EBDB] bg-white p-2.5"
@@ -71,7 +73,7 @@ export default function S55PatientRecord() {
               Điều trị
             </button>
           </nav>
-          <div className="z-20 flex flex-1 flex-col justify-between space-y-2 overflow-hidden">
+          <div className="z-20 flex flex-col space-y-2">
             <article className="shadow-xs rounded-xl border border-[#E9EBDB] bg-white/80 p-2.5">
               <div className="mb-1.5 flex items-center justify-between border-b border-neutral-100 pb-1.5">
                 <span className="text-[11.5px] font-bold text-[#173B32]" style={{ fontFamily: 'var(--font-heading)' }}>
@@ -116,46 +118,46 @@ export default function S55PatientRecord() {
                 <div className="text-center">
                   <div className="relative aspect-square overflow-hidden rounded-lg border border-[#D5CEBF] bg-[#F5F6EF]">
                     <img
-                      alt="01/08/2024"
+                      alt="01/08/2026"
                       className="absolute h-full max-w-none object-cover"
                       style={{ left: '0%', width: '400%' }}
                       src="/img/skin/acne-cheek-1.jpg"
                     />
                   </div>
-                  <span className="mt-0.5 block text-[8.5px] font-medium text-neutral-600">01/08/2024</span>
+                  <span className="mt-0.5 block text-[8.5px] font-medium text-neutral-600">01/08/2026</span>
                 </div>
                 <div className="text-center">
                   <div className="relative aspect-square overflow-hidden rounded-lg border border-[#D5CEBF] bg-[#F5F6EF]">
                     <img
-                      alt="15/08/2024"
+                      alt="15/08/2026"
                       className="absolute h-full max-w-none object-cover"
                       style={{ left: '-100%', width: '400%' }}
                       src="/img/skin/acne-cheek-1.jpg"
                     />
                   </div>
-                  <span className="mt-0.5 block text-[8.5px] font-medium text-neutral-600">15/08/2024</span>
+                  <span className="mt-0.5 block text-[8.5px] font-medium text-neutral-600">15/08/2026</span>
                 </div>
                 <div className="text-center">
                   <div className="relative aspect-square overflow-hidden rounded-lg border border-[#D5CEBF] bg-[#F5F6EF]">
                     <img
-                      alt="10/09/2024"
+                      alt="10/09/2026"
                       className="absolute h-full max-w-none object-cover"
                       style={{ left: '-200%', width: '400%' }}
                       src="/img/skin/acne-cheek-1.jpg"
                     />
                   </div>
-                  <span className="mt-0.5 block text-[8.5px] font-medium text-neutral-600">10/09/2024</span>
+                  <span className="mt-0.5 block text-[8.5px] font-medium text-neutral-600">10/09/2026</span>
                 </div>
                 <div className="text-center">
                   <div className="relative aspect-square overflow-hidden rounded-lg border border-[#D5CEBF] bg-[#F5F6EF]">
                     <img
-                      alt="22/10/2024"
+                      alt="22/10/2026"
                       className="absolute h-full max-w-none object-cover"
                       style={{ left: '-300%', width: '400%' }}
                       src="/img/skin/acne-cheek-1.jpg"
                     />
                   </div>
-                  <span className="mt-0.5 block text-[8.5px] font-medium text-neutral-600">22/10/2024</span>
+                  <span className="mt-0.5 block text-[8.5px] font-medium text-neutral-600">22/10/2026</span>
                 </div>
               </div>
             </article>

@@ -15,23 +15,25 @@ export default function S51OrdersPayments() {
           className="relative z-10 flex flex-1 flex-col overflow-hidden px-4"
           style={{ paddingBottom: '96px', overflowY: 'auto', scrollbarWidth: 'none' }}
         >
-          <header className="relative z-10 flex items-center justify-between pb-2 pt-1">
-            <button
-              aria-label="Quay lại"
-              data-back="s48"
-              className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 bg-white/70 text-gray-700 shadow-sm"
-            >
-              <span className="material-symbols-outlined text-[18px]">chevron_left</span>
-            </button>
-            <BrandLogo className="flex items-center justify-center" />
-            <div className="w-8" />
+          <header className="relative z-10 shrink-0 pb-2 pt-1">
+            <div className="flex items-center justify-between pb-1">
+              <button
+                aria-label="Quay lại"
+                data-back="s48"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 bg-white/70 text-gray-700 shadow-sm"
+              >
+                <span className="material-symbols-outlined text-[18px]">chevron_left</span>
+              </button>
+              <BrandLogo className="flex items-center justify-center" />
+              <div className="w-8" />
+            </div>
+            <div className="mt-1">
+              <h1 className="font-serif text-[20px] font-bold leading-snug tracking-tight text-[#173B32]">Đơn hàng và thanh toán</h1>
+              <p className="mt-0.5 text-[11.5px] leading-tight text-[#636A5E]">
+                Theo dõi đơn hàng, lịch sử thanh toán và các giao dịch dịch vụ của bạn.
+              </p>
+            </div>
           </header>
-          <div className="z-10 mb-2.5 mt-1">
-            <h1 className="font-serif text-[20px] font-bold leading-snug tracking-tight text-[#173B32]">Đơn hàng và thanh toán</h1>
-            <p className="mt-0.5 text-[11.5px] leading-tight text-[#636A5E]">
-              Theo dõi đơn hàng, lịch sử thanh toán và các giao dịch dịch vụ của bạn.
-            </p>
-          </div>
           <nav data-pills="" className="z-10 mb-2.5 flex items-center gap-1.5 overflow-x-hidden text-xs">
             <button data-on="" className="rounded-full bg-[#357D64] px-3.5 py-1.5 text-[11px] font-medium text-white shadow-sm">
               Tất cả
@@ -46,7 +48,7 @@ export default function S51OrdersPayments() {
               Gói dịch vụ
             </button>
           </nav>
-          <div className="z-10 flex flex-1 flex-col space-y-2 overflow-hidden pb-1">
+          <div className="z-10 flex flex-1 flex-col space-y-2 pb-2">
             <article className="flex flex-col justify-between rounded-2xl border border-[#E8EADC]/80 bg-white p-3 shadow-sm">
               <div className="flex items-start justify-between">
                 <div className="flex items-center space-x-3">
@@ -57,7 +59,7 @@ export default function S51OrdersPayments() {
                     <div className="flex items-center space-x-1.5">
                       <span className="text-[10.5px] font-medium text-gray-500">#DH250922001</span>
                       <span className="text-[10px] text-gray-400">•</span>
-                      <span className="text-[10.5px] text-gray-400">22/09/2025</span>
+                      <span className="text-[10.5px] text-gray-400">22/09/2026</span>
                     </div>
                     <h2 className="mt-0.5 text-[13.5px] font-bold leading-tight text-[#173B32]">Sữa rửa mặt dịu nhẹ</h2>
                     <div className="mt-0.5 flex items-center space-x-2">
@@ -105,7 +107,7 @@ export default function S51OrdersPayments() {
                     <div className="flex items-center space-x-1.5">
                       <span className="text-[10.5px] font-medium text-gray-500">#DH180920001</span>
                       <span className="text-[10px] text-gray-400">•</span>
-                      <span className="text-[10.5px] text-gray-400">18/09/2025</span>
+                      <span className="text-[10.5px] text-gray-400">18/09/2026</span>
                     </div>
                     <h2 className="mt-0.5 text-[13.5px] font-bold leading-tight text-[#173B32]">Bộ dưỡng ẩm phục hồi</h2>
                     <div className="mt-0.5 flex items-center space-x-2">
@@ -153,12 +155,12 @@ export default function S51OrdersPayments() {
                   </div>
                   <div>
                     <div className="flex items-center space-x-1.5">
-                      <span className="text-[10.5px] font-medium text-gray-500">10/09/2025</span>
+                      <span className="text-[10.5px] font-medium text-gray-500">10/09/2026</span>
                     </div>
                     <h2 className="mt-0.5 text-[13.5px] font-bold leading-tight text-[#173B32]">Premium Care · 1 tháng</h2>
                     <div className="mt-0.5 flex items-center space-x-2">
                       <span className="text-[13px] font-bold text-[#173B32]">299.000đ</span>
-                      <span className="text-[10px] text-gray-400">Tự gia hạn: 10/10/2025</span>
+                      <span className="text-[10px] text-gray-400">Tự gia hạn: 10/10/2026</span>
                     </div>
                   </div>
                 </div>
@@ -197,11 +199,11 @@ export default function S51OrdersPayments() {
                   </div>
                   <div>
                     <div className="flex items-center space-x-1.5">
-                      <span className="text-[10.5px] font-medium text-gray-500">05/09/2025</span>
+                      <span className="text-[10.5px] font-medium text-gray-500">05/09/2026</span>
                     </div>
                     <h2 className="mt-0.5 text-[13.5px] font-bold leading-tight text-[#173B32]">Tư vấn bác sĩ da liễu</h2>
                     <div className="mt-0.5 flex items-center space-x-2">
-                      <span className="text-[13px] font-bold text-[#173B32]">300.000đ</span>
+                      <span className="text-[13px] font-bold text-[#173B32]">250.000đ</span>
                     </div>
                   </div>
                 </div>
@@ -238,7 +240,7 @@ export default function S51OrdersPayments() {
                     <div className="flex items-center space-x-1.5">
                       <span className="text-[10.5px] font-medium text-gray-500">#DH020920001</span>
                       <span className="text-[10px] text-gray-400">•</span>
-                      <span className="text-[10.5px] text-gray-400">02/09/2025</span>
+                      <span className="text-[10.5px] text-gray-400">02/09/2026</span>
                     </div>
                     <h2 className="mt-0.5 text-[13.5px] font-bold leading-tight text-[#173B32]">Kem chống nắng quang phổ rộng</h2>
                     <div className="mt-0.5 flex items-center space-x-2">

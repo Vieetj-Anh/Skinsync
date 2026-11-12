@@ -8,7 +8,7 @@ export default function S46MedicationHistory() {
     <Screen tab={2}>
       <div className="botanical-bg relative flex h-[844px] w-[390px] flex-col justify-between overflow-hidden bg-[#F7F8F2] antialiased">
         <SafeAreaTop />
-        <main className="z-10 flex flex-1 flex-col overflow-hidden px-4 pb-1 pt-0" style={{ paddingBottom: '92px' }}>
+        <main className="no-scrollbar z-10 flex flex-1 flex-col overflow-y-auto px-4 pb-1 pt-0" style={{ paddingBottom: '96px' }}>
           <header className="relative mb-1.5 flex items-center justify-between py-1">
             <button
               aria-label="Quay lại"

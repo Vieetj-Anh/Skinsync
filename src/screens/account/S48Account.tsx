@@ -10,8 +10,8 @@ export default function S48Account() {
     <Screen tab={4} iconSize="sm">
       <div className="relative flex h-[844px] w-[390px] select-none flex-col justify-between overflow-hidden bg-[#F7F8F2] font-sans antialiased">
         <SafeAreaTop />
-        <div className="z-20 mb-[74px] flex flex-1 flex-col justify-between overflow-hidden px-4 pb-1 pt-1">
-          <div className="flex flex-col">
+        <div className="no-scrollbar z-20 mb-[74px] flex flex-1 flex-col justify-between overflow-y-auto px-4 pb-1 pt-1">
+          <header className="flex flex-col">
             <div className="relative mb-1 flex h-7 items-center justify-between">
               <button
                 aria-label="Quay lại"
@@ -25,17 +25,17 @@ export default function S48Account() {
               <div className="h-7 w-7" />
             </div>
             <div className="px-0.5">
-              <h1 className="font-serif-brand text-[22px] font-bold leading-tight text-[#173B32]">Tài khoản của tôi</h1>
+              <h1 className="font-serif text-[22px] font-bold leading-tight text-[#173B32]">Tài khoản của tôi</h1>
               <p className="mt-0.5 text-[12px] leading-snug text-[#5F8075]">Quản lý thông tin cá nhân và các cài đặt của bạn.</p>
             </div>
-          </div>
+          </header>
           <div className="flex items-center gap-3 rounded-[18px] border border-[#E7ECEA] bg-white px-3.5 py-3 shadow-[0_2px_10px_rgba(0,0,0,0.03)]">
             <div className="shadow-xs h-[52px] w-[52px] shrink-0 overflow-hidden rounded-full border border-[#DEE4E2] bg-[#EDEFE2]">
               <img alt="Nguyễn Minh Anh" className="h-full w-full object-cover" src="/img/people/user-minh-anh.jpg" />
             </div>
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-2">
-                <h2 className="font-serif-brand truncate text-[15.5px] font-bold text-[#173B32]">Nguyễn Minh Anh</h2>
+                <h2 className="font-serif truncate text-[15.5px] font-bold text-[#173B32]">Nguyễn Minh Anh</h2>
                 <button
                   aria-label="Sửa thông tin"
                   data-go="s49"

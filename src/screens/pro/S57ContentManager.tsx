@@ -11,29 +11,31 @@ export default function S57ContentManager() {
         style={{ width: '390px', height: '844px', backgroundColor: '#F7F8F2' }}
       >
         <SafeAreaTop />
-        <header className="relative z-40 flex items-center justify-between px-5 pb-1.5 pt-2">
-          <button
-            aria-label="Menu"
-            data-toast="Menu bác sĩ (minh họa)"
-            className="shadow-xs flex h-8 w-8 items-center justify-center rounded-xl border border-[#E0E7E4] bg-white text-[#173B32] transition active:scale-95"
-            type="button"
-          >
-            <span className="material-symbols-outlined text-[20px]">menu</span>
-          </button>
-          <div className="flex items-center">
-            <BrandLogo />
+        <header className="relative z-40 shrink-0 px-5 pb-1 pt-2">
+          <div className="flex items-center justify-between pb-1">
+            <button
+              aria-label="Menu"
+              data-toast="Menu bác sĩ (minh họa)"
+              className="shadow-xs flex h-8 w-8 items-center justify-center rounded-xl border border-[#E0E7E4] bg-white text-[#173B32] transition active:scale-95"
+              type="button"
+            >
+              <span className="material-symbols-outlined text-[20px]">menu</span>
+            </button>
+            <div className="flex items-center">
+              <BrandLogo />
+            </div>
+            <div data-go="s58" className="shadow-xs h-8 w-8 overflow-hidden rounded-full border border-[#D3DFDA] bg-white">
+              <img alt="Doctor avatar" className="h-full w-full object-cover" src="/img/people/doctor-lan.jpg" />
+            </div>
           </div>
-          <div data-go="s58" className="shadow-xs h-8 w-8 overflow-hidden rounded-full border border-[#D3DFDA] bg-white">
-            <img alt="Doctor avatar" className="h-full w-full object-cover" src="/img/people/doctor-lan.jpg" />
-          </div>
-        </header>
-        <main className="relative z-20 flex flex-1 flex-col justify-between overflow-hidden px-4 pb-[90px] pt-1">
-          <div className="mb-1">
-            <h1 className="font-serif text-[18px] font-bold leading-tight tracking-tight text-[#173B32]">Quản lý bài viết và video</h1>
+          <div className="mt-1">
+            <h1 className="font-serif text-[18px] font-bold leading-tight tracking-tight text-[#173B32]">Quản lý bài viết / video</h1>
             <p className="mt-0.5 text-[10.5px] leading-tight text-[#627E74]">
               Tạo và quản lý nội dung chia sẻ kiến thức, tư vấn chăm sóc da cho cộng đồng.
             </p>
           </div>
+        </header>
+        <main className="no-scrollbar relative z-20 flex flex-1 flex-col space-y-2 overflow-y-auto px-4 pb-[96px] pt-1">
           <div data-pills="" className="mb-1.5 flex items-center gap-1.5">
             <button
               data-on=""

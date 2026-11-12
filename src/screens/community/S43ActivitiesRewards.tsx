@@ -51,16 +51,23 @@ export default function S43ActivitiesRewards() {
         <Pills items={['Tất cả', 'Thử thách', 'Câu đố', 'Ưu đãi', 'Sự kiện']} />
 
         <div className="campaign">
-          <div>
-            <span className="pill">🌼　SỰ KIỆN CỘNG ĐỒNG</span>
-            <h2 style={{ marginTop: 8 }}>
+          <div style={{ flex: 1, minWidth: 0, paddingRight: 6 }}>
+            <span className="pill" style={{ padding: '3px 8px', fontSize: 10, fontWeight: 600 }}>
+              🌼　SỰ KIỆN CỘNG ĐỒNG
+            </span>
+            <h2 style={{ marginTop: 6, fontSize: 15, lineHeight: 1.25 }}>
               Thử thách 28 ngày
               <br />
               Làn da khỏe hơn
             </h2>
-            <p>Cùng nhau xây dựng thói quen chăm sóc da tốt hơn mỗi ngày!</p>
-            <p style={{ marginTop: 8 }}>◷ 01/11/2024 – 30/11/2024</p>
-            <button className="btn primary" style={{ marginTop: 8 }} data-go="s40" data-toast="Bạn đã tham gia thử thách 28 ngày!">
+            <p style={{ fontSize: 11, lineHeight: 1.35 }}>Cùng nhau xây dựng thói quen chăm sóc da tốt hơn mỗi ngày!</p>
+            <p style={{ marginTop: 4, fontSize: 10.5 }}>◷ 01/11/2024 – 30/11/2024</p>
+            <button
+              className="btn primary"
+              style={{ marginTop: 8, padding: '6px 14px', fontSize: 11 }}
+              data-go="s40"
+              data-toast="Bạn đã tham gia thử thách 28 ngày!"
+            >
               Tham gia ngay →
             </button>
           </div>
